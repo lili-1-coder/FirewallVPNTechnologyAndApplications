@@ -51,11 +51,11 @@ upstream  https://github.com/LiuXiYing/FirewallVPNTechnologyAndApplications.git 
 git pull upstream main
 ```
 
-### 2. 在自己的文件夹下新建本次作业目录，完成作业
+### 2. 在自己的文件夹下新建本次作业目录，完成作业(以第一次作业为例)
 
 ```
 学号姓名/
-└── Lab1/
+└── Lab1/          (注意大小写)
     └── Lab1.md
 ```
 
@@ -78,10 +78,10 @@ git push
 **标题：**
 
 ```
-[学号姓名] Lab1作业提交
+[学号姓名]Lab1作业提交
 ```
 
-例如：`[2024010002王诗惠] Lab1作业提交`
+例如：`[2024010002王诗惠]Lab1作业提交`
 
 **描述：**
 
