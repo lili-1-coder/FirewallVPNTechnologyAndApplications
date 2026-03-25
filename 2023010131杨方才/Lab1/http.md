@@ -55,14 +55,14 @@ HTTPS 在 HTTP 基础上加入了 TLS 加密，报文内容在传输过程中无
 
 | 截图内容                       | 文件名                                 |
 | :----------------------------- | :------------------------------------- |
-| Request Headers（请求头）截图  | `req.png`    ( jpg 或 jpeg 格式也可以) |
-| Response Headers（响应头）截图 | `resp.png`  ( jpg或 jpeg 格式也可以)   |
+| Request Headers（请求头）截图  | `req.jpg`    ( jpg 或 jpeg 格式也可以) |
+| Response Headers（响应头）截图 | `resp.jpg`  ( jpg或 jpeg 格式也可以)   |
 
 截图示例位置（填写时直接在下方嵌入）：
 
 ```markdown
-![请求头截图](req.png)
-![响应头截图](resp.png)
+![请求头截图](req.jpg)
+![响应头截图](resp.jpg)
 ```
 
 ---
@@ -83,7 +83,7 @@ HTTPS 在 HTTP 基础上加入了 TLS 加密，报文内容在传输过程中无
 
 **嵌入截图：**
 
-![请求头截图](req.png)
+![请求头截图](req.jpg)
 
 ---
 
@@ -98,7 +98,7 @@ HTTPS 在 HTTP 基础上加入了 TLS 加密，报文内容在传输过程中无
 
 **嵌入截图：**
 
-![响应头截图](resp.png)
+![响应头截图](resp.jpg)
 
 ---
 
