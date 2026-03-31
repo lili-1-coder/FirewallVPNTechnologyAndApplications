@@ -76,7 +76,7 @@ HTTPS 在 HTTP 基础上加入了 TLS 加密，报文内容在传输过程中无
 | 字段               | 你的截图中的值 |
 | :----------------- | :------------- |
 | 请求方法（Method） |GET|
-| 请求路径（URI）    |/|
+| 请求路径（URI）    |https://www.bilibili.com/|
 | 协议版本           |https|
 | Host               |   /             |
 | User-Agent         |   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0             |
@@ -91,8 +91,8 @@ HTTPS 在 HTTP 基础上加入了 TLS 加密，报文内容在传输过程中无
 
 | 字段                  | 你的截图中的值 |
 | :-------------------- | :------------- |
-| 状态码（Status Code） |     200 OK           |
-| 状态描述              |                |
+| 状态码（Status Code） |     200           |
+| 状态描述              |      ok         |
 | Content-Type          |    text/html; charset=utf-8       |
 | Server（若可见）      |     render;dur=317,total;dur=342           |
 
