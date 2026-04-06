@@ -187,7 +187,27 @@ def reject(reason: str):
     )
     sys.exit(0)
 
-
+def ready_pr():
+    """如果是 Draft PR，先转成 Ready for review"""
+    query = """
+    mutation($prId: ID!) {
+      markPullRequestReadyForReview(input: {pullRequestId: $prId}) {
+        pullRequest { isDraft }
+      }
+    }
+    """
+    # 先获取 PR 的 node_id
+    pr_data = gh_get(f"/repos/{REPO}/pulls/{PR_NUMBER}")
+    node_id = pr_data.get("node_id")
+    if not pr_data.get("draft"):
+        return  # 不是 draft，不需要处理
+    
+    requests.post(
+        "https://api.github.com/graphql",
+        headers=GH,
+        json={"query": query, "variables": {"prId": node_id}}
+    )
+    print("  ✓ 已将 Draft PR 转为 Ready for review")
 def merge_pr():
     r = requests.put(f"{API}/repos/{REPO}/pulls/{PR_NUMBER}/merge", headers=GH, json={
         "merge_method": "merge",
@@ -527,7 +547,7 @@ def main():
         "| 文件格式 | ✅ |\n"
         "| 内容质量 | ✅ |\n"
     )
-
+    ready_pr() 
     if merge_pr():
         print(f"  ✓ PR #{PR_NUMBER} 已自动合并")
     else:
