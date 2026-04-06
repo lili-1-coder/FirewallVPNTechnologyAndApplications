@@ -462,12 +462,12 @@ def check_with_kimi(student_id_name: str, lab: str, changed_files: list):
                 "Content-Type": "application/json",
             },
             json={
-                "model": "moonshot-v1-32k",
+                "model": "kimi-k2.5",
                 "messages": [
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_msg},
                 ],
-                "temperature": 0.1,
+                "temperature": 1,
             },
             timeout=120,
         )
