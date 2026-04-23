@@ -1,3 +1,0 @@
-"No.","Time","Source","Destination","Protocol","Length","Info"
-"731","3.495173300","2408:846c:1760:1a17:fdca:50e1:9c1d:bddc","2408:846c:1760:1a17::55","DNS","95","Standard query 0xee8a A www.yxnu.edu.cn"
-"823","3.931768000","10.158.230.175","10.158.230.132","DNS","91","Standard query response 0xee8a A www.yxnu.edu.cn A 61.166.32.242"
