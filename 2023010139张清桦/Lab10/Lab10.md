@@ -292,7 +292,7 @@ sudo ip netns exec office curl --connect-timeout 3 http://10.0.3.2:8080/
 | `wan → 10.0.3.2:8080` |失败|curl 报错 Could not connect to server，连接超时，无法访问 DMZ 内网地址| 
 | `office → 10.0.3.2:8080` |成功|curl 成功返回了 HTTP 响应（包含 HTML 目录列表），说明内网可正常访问 DMZ 服务|
 
-![拓扑与基本连通性](topology.jpg)
+![拓扑与基本连通性](topology.png)
 
 **第一阶段小结**：外部（`wan`）无法直接访问内网服务器的私有地址——这是"网络层路由不可达"造成的，也是我们要模拟的真实互联网边界。接下来用端口映射让外部**只能**通过 `fw` 的指定端口访问内网服务，所有流量都在防火墙的监督下进出。
 
